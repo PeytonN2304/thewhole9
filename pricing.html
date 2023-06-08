@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Price Sheet</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="index.html">The Whole 9</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Packages</a></li>
+          <li><a href="about.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Packages</a></li>
+          <li><a href="about.html">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="exterior" onclick="location.href='exteriorpackage.html'">
+      <h1>Exterior Package</h1>
+      <h2>$120</h2>
+      <p>
+        Our <strong>exterior package</strong> uses fine autocare products that
+        are sure to leave your vehicle with stunning shine
+      </p>
+
+      <div class="features">
+        <div class="text">
+          <p>
+            <span>Features:</span>
+            <li>Full car hand wash  <br>(with foam bath)</li>
+            <li>Shammy hand dry</li>
+            <li>Tire cleaning</li>
+            <li>Deep Wheel cleaning</li>
+            <li>Premium 2-step wax cleaner wax, "butter" wax</li>
+            <li>Spotless glass cleaning <br> (interior & exterior)</li>
+            <img src="bucket.png" alt="Bucket" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="exterior" onclick="location.href='exteriorpackage.html'">
+      <h1>Interior Package</h1>
+      <h2>$120</h2>
+      <p>
+        Our <b>interior package</b> is sure to leave the inside of YOUR car
+        looking impeccable as a result of our faithful products
+      </p>
+
+      <div class="features">
+        <div class="text">
+          <p>
+            <span>Features:</span>
+            <li>Vacuum</li>
+            <li>
+              Surface cleaning <br />
+              (vents,vinyl, compartments, seats)
+            </li>
+            <li>Door jams</li>
+            <li>Odor control</li>
+            <li>
+              Floor Mats <br />
+              (rubber & cloth)
+            </li>
+            <li>Spotless glass cleaning <br> (interior & exterior)</li>
+            <img src="vacuum.png" alt="Bucket" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="exterior" onclick="location.href='exteriorpackage.html'">
+      <h1>"Whole 9" Package</h1>
+      <h2>$200</h2>
+      <p>
+        Our <b>whole 9 package</b> makes your car feel as fresh as new inside
+        and out
+      </p>
+
+      <div class="features">
+        <div class="text">
+          <p>
+            <span>Features:</span>
+            <li>Exterior package</li>
+            <li>Interior Package</li>
+            <p>+</p>
+            <li>Silk Shine Protectant <br> (interior-vinyl, rubber, plastic)</li>
+
+            <img src="whole9.png" alt="Bucket" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
