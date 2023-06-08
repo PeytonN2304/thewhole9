@@ -162,14 +162,28 @@ ul a:hover {
   }
 
   .exterior {
-    background-color: rgb(0, 255, 255);
-    border: 5px solid #f703ff;
-    width: 100%;
-    height: fit-content;
-    color: black;
-    margin-bottom: 10px;
+    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 95%;
+    height: auto;
     border-radius: 50px;
-    margin-top: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    position: relative;
+    text-align: center;
+  }
+
+  .exterior img {
+    width: 50%;
+  }
+  .exterior#bigger {
+    width: 75%;
   }
 
   .exterior h1,
@@ -181,33 +195,39 @@ ul a:hover {
   .features .text span {
     font-weight: bold;
     text-decoration: underline;
-    text-align: center;
   }
 
   .exterior .features li {
     margin-top: 2%;
+    text-align: center;
+  }
+
+  .Featuretext span {
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .features img {
     max-width: 50%;
-    max-height: 50%;
-    padding-top: 5%;
+    height: auto;
   }
 
-  .exterior h3 {
-    margin-top: 5%;
-    margin-left: -25%;
+  .features {
+    margin-top: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .exterior .text {
+  .Featuretext {
     text-align: center;
-    width: 100%;
-    border: none;
   }
 
   .exterior p {
     margin-top: 2%;
     text-align: center;
+    font-size: 95%;
   }
 
   .contacts {
@@ -371,7 +391,6 @@ ul a:hover {
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
     border-radius: 50em;
     border: 4px solid transparent;
-
     width: 18%;
     height: auto;
     border-radius: 50px;
