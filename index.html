@@ -33,27 +33,13 @@
         </ul>
       </nav>
     </header>
-    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="bucket.png" alt="" />
-          </li>
-          <li class="splide__slide">
-            <img src="vacuum.png" alt="" />
-          </li>
-          <li class="splide__slide">
-            <img src="whole9.png" alt="" />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#image-carousel").mount();
-      });
-    </script>
+    <div id="slider">
+      <div class="slide">1</div>
+      <div class="slide">2</div>
+      <div class="slide">3</div>
+    </div>
+    <button class="prev">Prev</button>
+    <button class="next">Next</button>
     <script src="index.js"></script>
-    <div></div>
   </body>
 </html>
