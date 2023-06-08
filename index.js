@@ -2,31 +2,35 @@ function toggleMobileMenu(menu) {
   menu.classList.toggle("open");
 }
 
-const slides = document.querySelectorAll(".slide");
-let index = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function prevSlide() {
-  slides[index].classList.remove("active");
-  index--;
-
-  if (index < 0) index = slides.length - 1;
-
-  slides[index].classList.add("active");
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
-document.querySelector(".prev").addEventListener("click", (e) => {
-  prevSlide();
-});
-
-function nextSlide() {
-  slides[index].classList.remove("active");
-  index++;
-
-  if (index > slides.length - 1) index = 0;
-
-  slides[index].classList.add("active");
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
 }
 
-document.querySelector(".next").addEventListener("click", (e) => {
-  nextSlide();
-});
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
