@@ -185,9 +185,6 @@ ul a:hover {
   .exterior img {
     width: 50%;
   }
-  .exterior#bigger {
-    width: 75%;
-  }
 
   .exterior h1,
   h2,
@@ -411,7 +408,12 @@ ul a:hover {
   .exterior img {
     width: 50%;
   }
-  .exterior#bigger {
+
+  #bigger {
+    width: 100%;
+  }
+
+  #vacuum {
     width: 75%;
   }
 
