@@ -2,7 +2,7 @@
 
 html,
 body {
-  background: linear-gradient(-45deg, #1e134e, #000000, #1e134e, #000000);
+  background-color: #1e134e;
   animation: gradient 15s ease infinite;
   margin: 0px;
   padding: 0px;
@@ -55,17 +55,17 @@ header {
   color: #f703ff;
   font-family: "Monoton", cursive;
   letter-spacing: 0.1em;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #f703ff, 0 0 10px #f703ff,
-      0 0 15px #f703ff, 0 0 20px #f703ff, 0 0 25px #f703ff;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #f703ff, 0 0 12px #f703ff,
+      0 0 18px #f703ff, 0 0 24px #f703ff, 0 0 30px #f703ff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 16px #f703ff, 0 0 20px #f703ff,
-      0 0 30px #f703ff, 0 0 40px #f703ff, 0 0 50px #f703ff;
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 16px #f703ff, 0 0 24px #f703ff,
+      0 0 36px #f703ff, 0 0 48px #f703ff, 0 0 60px #f703ff;
   }
 }
 
@@ -215,6 +215,44 @@ ul a:hover {
   background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
   text-decoration: none;
   cursor: pointer;
+}
+
+.feed {
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  padding: 2.5%;
+}
+
+.profile-banner {
+  border: 0.5px solid white;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.handle {
+  color: white;
+  margin: 5%;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.feed-description-container {
+  border: 0.5px solid white;
+  border-top: 0.5px solid white;
+  background-color: rgb(0, 0, 0, 0.8);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.feed-description {
+  color: white;
+  font-weight: 200;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  margin-left: 2%;
 }
 
 @media only screen and (max-width: 600px) {
