@@ -69,7 +69,7 @@ header {
   }
 }
 
-nav > ul {
+ul {
   list-style: none;
   height: 100%;
   display: flex;
@@ -94,28 +94,28 @@ nav > ul {
   z-index: 9999;
 }
 
-nav > ul > a {
+ul > a {
   color: white;
 }
 
-nav > ul > li {
+ul > li {
   padding: 5px;
   position: relative;
 }
 
-nav > ul > li > span {
+ul > li > span {
   color: white;
   background-color: red;
   border: red;
   border-radius: 50%;
 }
 
-nav > ul > li:not(.quantity):hover {
+ul > li:not(.quantity):hover {
   transform: scale(1.1);
   transition: 0.3s ease-in;
 }
 
-nav > ul > a:hover {
+ul > a:hover {
   color: #f703ff;
   transition: 0.3s ease-in;
 }
