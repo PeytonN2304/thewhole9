@@ -518,6 +518,9 @@ ul a:hover {
     border: 4px solid transparent;
     border-radius: 50px;
     margin: 5%;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
   }
   .detail-table {
     margin: auto;
