@@ -169,6 +169,36 @@ ul a:hover {
   text-align: center;
 }
 
+.btn {
+  background: #dc1ce3;
+  background-image: -webkit-linear-gradient(top, #dc1ce3, #a71ce8);
+  background-image: -moz-linear-gradient(top, #dc1ce3, #a71ce8);
+  background-image: -ms-linear-gradient(top, #dc1ce3, #a71ce8);
+  background-image: -o-linear-gradient(top, #dc1ce3, #a71ce8);
+  background-image: linear-gradient(to bottom, #dc1ce3, #a71ce8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: "Quicksand", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+.btn:hover {
+  background: #f703ff;
+  background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
+  background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
+  background-image: -ms-linear-gradient(top, #f703ff, #ae02fd);
+  background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
+  background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
@@ -476,21 +506,22 @@ ul a:hover {
 
   .contact-container {
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: auto;
     gap: 5%;
-    height: 50%;
+    height: 100vh; /* Use viewport height instead of percentage for better responsiveness */
     flex-direction: row;
+    justify-content: center; /* Horizontally center the contact boxes */
+    align-items: center; /* Vertically center the contact boxes */
   }
 
   .contacts {
     color: white;
     background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
-    border-radius: 50em;
     border: 4px solid transparent;
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     margin-bottom: 10px;
     border-radius: 25px;
     text-align: center;
@@ -500,20 +531,11 @@ ul a:hover {
     flex-direction: column;
   }
 
-  .contacthead h1 {
-    color: white;
-    text-align: center;
-    margin-bottom: 1em;
-    font-family: "Quicksand", sans-serif;
-    margin-top: 5%;
-  }
-
   .contacts p {
     color: black;
     margin: 0;
     padding: 0;
     font-family: "Quicksand", sans-serif;
-    margin-top: 10%;
   }
 
   .contacts h2 {
@@ -541,35 +563,5 @@ ul a:hover {
   }
   #patinfo {
     font-weight: 500;
-  }
-
-  .btn {
-    background: #dc1ce3;
-    background-image: -webkit-linear-gradient(top, #dc1ce3, #a71ce8);
-    background-image: -moz-linear-gradient(top, #dc1ce3, #a71ce8);
-    background-image: -ms-linear-gradient(top, #dc1ce3, #a71ce8);
-    background-image: -o-linear-gradient(top, #dc1ce3, #a71ce8);
-    background-image: linear-gradient(to bottom, #dc1ce3, #a71ce8);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: "Quicksand", sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    border: solid #000000 1px;
-    text-decoration: none;
-    margin-top: 2%;
-  }
-
-  .btn:hover {
-    background: #f703ff;
-    background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
-    background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
-    background-image: -ms-linear-gradient(top, #f703ff, #ae02fd);
-    background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
-    background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
-    text-decoration: none;
-    cursor: pointer;
   }
 }
