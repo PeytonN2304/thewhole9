@@ -225,7 +225,7 @@ nav > ul > a:hover {
     border-radius: 50%;
     width: 75%;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 10%;
     /* Additional styling properties */
     background-color: red; /* Just for illustration purposes */
   }
