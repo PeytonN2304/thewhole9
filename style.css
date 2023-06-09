@@ -217,44 +217,6 @@ ul a:hover {
   cursor: pointer;
 }
 
-.feed {
-  width: 100%;
-  margin: auto;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  font-family: "Quicksand", sans-serif;
-  padding: 2.5%;
-}
-
-.profile-banner {
-  border: 0.5px solid white;
-  background-color: rgb(0, 0, 0, 0.8);
-}
-
-.handle {
-  color: white;
-  margin: 5%;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-}
-
-.feed-description-container {
-  border: 0.5px solid white;
-  border-top: 0.5px solid white;
-  background-color: rgb(0, 0, 0, 0.8);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-.feed-description {
-  color: white;
-  font-weight: 200;
-  margin-top: 5%;
-  margin-bottom: 15%;
-  margin-left: 2%;
-}
-
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
@@ -372,6 +334,15 @@ ul a:hover {
   .Featuretext {
     text-align: center;
   }
+
+  .pictures {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -416,46 +387,6 @@ ul a:hover {
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
   }
 
   .packages-container {
@@ -619,5 +550,11 @@ ul a:hover {
   }
   #patinfo {
     font-weight: 500;
+  }
+
+  .pictures {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the value to control the space around the images */
   }
 }
