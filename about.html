@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -17,23 +17,38 @@
     <script id="replace_with_navbar" src="nav.js"></script>
     <script src="index.js"></script>
 
-    <div class="schedule-container"></div>
-
-    <div class="contact-container">
-      <div class="contacthead">Questions or Concerns?</div>
-      <div class="contacts">
-        <h2 id="contact-name">Gage Molyneux:</h2>
-        <p id="gageinfo">
-          Phone Number: (585)623-6506 <br />
-          Email: gmolyneux08@gmail.com
-        </p>
+    <div class="about-container">
+      <div class="schedule-container">
+        <div class="schedule-header">
+          Schedule an appointment with us today!
+        </div>
+        <div class="contacts-container">
+          <button
+            onclick="window.open('https://calendly.com/the-whole9/detailing', '_blank')"
+            class="btn"
+          >
+            Schedule
+          </button>
+        </div>
       </div>
-      <div class="contacts">
-        <h2 id="contact-name">Patrick Molyneux:</h2>
-        <p id="patinfo">
-          Phone Number: (585)738-8887 <br />
-          Email: pmolx@yahoo.com
-        </p>
+      <div class="contact-container">
+        <div class="contact-header">Questions or concerns?</div>
+        <div class="contacts-container">
+          <div class="contacts">
+            <h2 id="contact-name">Gage Molyneux:</h2>
+            <p id="gageinfo">
+              Phone Number: (585)623-6506 <br />
+              Email: gmolyneux08@gmail.com
+            </p>
+          </div>
+          <div class="contacts">
+            <h2 id="contact-name">Patrick Molyneux:</h2>
+            <p id="patinfo">
+              Phone Number: (585)738-8887 <br />
+              Email: pmolx@yahoo.com
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
