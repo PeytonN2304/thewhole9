@@ -44,15 +44,6 @@ header {
   z-index: 9999;
 }
 
-.quantity {
-  color: white;
-  background-color: red;
-  border: 5px solid red;
-  border-radius: 50%;
-  width: fit-content;
-  height: fit-content;
-}
-
 #brand {
   font-weight: bold;
   font-size: 250%;
@@ -85,13 +76,25 @@ ul {
   justify-content: space-around;
 }
 
+.quantity {
+  color: white;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul a {
   color: white;
 }
 
 ul li {
   padding: 5px;
-  margin-left: 10px;
 }
 
 ul li span {
@@ -101,7 +104,7 @@ ul li span {
   border-radius: 50%;
 }
 
-ul li:hover {
+ul li:not(.quantity):hover {
   transform: scale(1.1);
   transition: 0.3s ease-in;
 }
@@ -538,5 +541,35 @@ ul a:hover {
   }
   #patinfo {
     font-weight: 500;
+  }
+
+  .btn {
+    background: #dc1ce3;
+    background-image: -webkit-linear-gradient(top, #dc1ce3, #a71ce8);
+    background-image: -moz-linear-gradient(top, #dc1ce3, #a71ce8);
+    background-image: -ms-linear-gradient(top, #dc1ce3, #a71ce8);
+    background-image: -o-linear-gradient(top, #dc1ce3, #a71ce8);
+    background-image: linear-gradient(to bottom, #dc1ce3, #a71ce8);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    margin-top: 2%;
+  }
+
+  .btn:hover {
+    background: #f703ff;
+    background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -ms-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
+    text-decoration: none;
+    cursor: pointer;
   }
 }
