@@ -254,7 +254,9 @@ ul a:hover {
 
   .detail-table td,
   .detail-table th {
-    padding: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
   }
 
