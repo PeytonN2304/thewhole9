@@ -501,6 +501,10 @@ ul a:hover {
     width: 75%;
     height: auto;
   }
+
+  .pictures {
+    margin-top: 5%;
+  }
   .circleImage {
     display: flex;
     justify-content: center;
