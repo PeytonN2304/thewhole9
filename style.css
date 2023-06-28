@@ -40,8 +40,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 }
 
@@ -305,6 +307,7 @@ ul a:hover {
     position: relative;
     text-align: center;
     margin: 5% auto;
+    margin-top: 25%;
   }
 
   .exterior img {
@@ -360,7 +363,7 @@ ul a:hover {
     border: 4px solid transparent;
     width: 75%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 30%;
   }
 
   .btn {
