@@ -473,10 +473,34 @@ ul a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20%;
+  }
+  .blazerpictures {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20%;
   }
 }
 
 @media only screen and (min-width: 601px) {
+  .blazerpictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5%;
+  }
+
+  .blazerpictures img {
+    width: 75%;
+    height: auto;
+  }
   .circleImage {
     display: flex;
     justify-content: center;
@@ -546,7 +570,7 @@ ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: 5%;
   }
   .packagesheader {
     color: black;
