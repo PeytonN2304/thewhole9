@@ -219,7 +219,11 @@ ul a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .contact-information {
+    font-weight: 500;
+    font-size: small;
+  }
   .circleImage {
     display: flex;
     justify-content: center;
@@ -410,6 +414,7 @@ ul a:hover {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 1%;
+    font-weight: bold;
   }
 
   .contact-container {
@@ -489,6 +494,10 @@ ul a:hover {
 }
 
 @media only screen and (min-width: 601px) {
+  .contact-information {
+    font-weight: bold;
+    font-size: large;
+  }
   .blazerpictures {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -539,6 +548,7 @@ ul a:hover {
   .detail-table th {
     padding: 12px;
     text-align: center;
+    font-weight: bold;
   }
 
   .detail-table th {
