@@ -553,6 +553,8 @@ ul a:hover {
 
   .detail-table th {
     vertical-align: bottom;
+    font-size: large;
+    text-decoration: underline;
   }
 
   .table-container {
