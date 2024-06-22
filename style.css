@@ -46,6 +46,105 @@ header {
   right: 0;
   z-index: 9999;
 }
+/* Slideshow container */
+.slideshow-container {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.addOnsMobile {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.packages-mobile {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 #brand {
   font-weight: bold;
@@ -315,13 +414,53 @@ ul a:hover {
     font-weight: 500;
     font-size: small;
   }
+  .arrowcontainer {
+    margin: auto;
+    position: relative;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .packages-container {
+    display: none;
+  }
+  .packages {
+    display: none;
+  }
+  .packages-mobile {
+    display: flex;
+  }
   .packageRight {
     display: flex;
     flex-direction: column-reverse; /* Arrange children in a column */
     justify-content: flex-start;
   }
   .exteriorAdOn {
-    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    background: linear-gradient(#00ffff, rgb(0, 255, 255)) padding-box,
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
     border-radius: 50em;
     border: 4px solid transparent;
@@ -336,10 +475,13 @@ ul a:hover {
     margin: auto;
     text-align: center;
     margin-top: 2%;
+    font-size: 12px;
+  }
+  .addOnsMobile {
+    display: flex;
   }
   .addOns {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: none;
   }
   .circleImage {
     display: flex;
@@ -412,27 +554,27 @@ ul a:hover {
     display: block;
     z-index: 9999;
   }
+  .slideshow-container {
+    width: 75%;
+  }
 
   .exterior {
-    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
-      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    background: linear-gradient(rgb(0, 255, 255), rgb(0, 89, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #9900ff) border-box;
     border-radius: 50em;
     border: 4px solid transparent;
     width: 75%;
-    height: auto;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-sizing: border-box;
     margin-bottom: 5%;
-    position: relative;
-    text-align: center;
     margin: 5% auto;
     margin-top: 20%;
     margin-bottom: -10%;
+    flex: 1;
   }
 
   .exterior img {
@@ -456,8 +598,7 @@ ul a:hover {
 
   .features {
     margin-top: 20px;
-    flex-grow: 1;
-    display: flex;
+    flex-grow: 2;
     flex-direction: column;
     align-items: center;
   }
@@ -581,11 +722,6 @@ ul a:hover {
     font-weight: 250;
   }
 
-  .slideshowheader,
-  .slideshow-container,
-  .packages-container .packagesheader {
-    display: none;
-  }
   .packages-containermobile {
     background: linear-gradient(#00ffff, rgb(0, 255, 255)) padding-box,
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
