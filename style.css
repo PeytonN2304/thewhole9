@@ -104,6 +104,95 @@ ul > li {
   padding: 5px;
   position: relative;
 }
+.ProductName {
+  flex-grow: 2;
+}
+.lineItem {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  justify-content: flex-end;
+  width: 100%;
+  background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    linear-gradient(to right, #f703ff, #ae02fd) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.addoncontainer {
+  text-align: center;
+  background-color: red;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    linear-gradient(to right, #f703ff, #ae02fd) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+}
+.totalContainer {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  justify-content: flex-end;
+  width: 100%;
+  background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    linear-gradient(to right, #f703ff, #ae02fd) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lineItemContainer {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  justify-content: flex-start;
+  width: 100%;
+  background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    linear-gradient(to right, #f703ff, #ae02fd) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  min-height: 10em;
+}
+.packagesAndPriceContainer {
+  display: flex;
+  flex-direction: row;
+}
 
 ul > li > span {
   color: white;
@@ -205,7 +294,6 @@ ul a:hover {
   padding: 10px 20px 10px 20px;
   border: solid #000000 1px;
   text-decoration: none;
-  margin-top: 2%;
 }
 
 .btn:hover {
@@ -223,6 +311,32 @@ ul a:hover {
   .contact-information {
     font-weight: 500;
     font-size: small;
+  }
+  .packageRight {
+    display: flex;
+    flex-direction: column-reverse; /* Arrange children in a column */
+    justify-content: flex-start;
+  }
+  .exteriorAdOn {
+    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 90%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .addOns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
   .circleImage {
     display: flex;
@@ -304,7 +418,8 @@ ul a:hover {
     width: 75%;
     height: auto;
     border-radius: 50px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -512,6 +627,71 @@ ul a:hover {
     width: 75%;
     height: auto;
   }
+  .packageLeft {
+    width: 75%;
+  }
+  .addsoncontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: auto;
+  }
+  .addonButton {
+    background: #d916e0;
+    background-image: -webkit-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -moz-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -ms-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -o-linear-gradient(top, #d916e0, #a719e8);
+    background-image: linear-gradient(to bottom, #d916e0, #a719e8);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 7px;
+  }
+  .addonButton:hover {
+    background: #f703ff;
+    background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -ms-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
+    text-decoration: none;
+  }
+  .addon {
+    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    margin-top: 1%;
+  }
+  .packageRight {
+    width: 30%;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: flex-start;
+    position: absolute;
+    margin-left: 60%;
+  }
+
+  .packagesOuter {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr; /* 1fr means one fraction of the available space */
+    grid-template-columns: 2.5fr 1fr; /* Responsive columns */
+    gap: 20px; /* Gap between grid items */
+    margin-top: 7%;
+  }
 
   .pictures {
     margin-top: 5%;
@@ -576,19 +756,94 @@ ul a:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+  .select {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    justify-content: space-between;
+  }
+  .select select {
+    font-family: "Arial";
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 9px 18px;
+    outline: 0;
+    border: 2px solid #f703ff;
+    border-radius: 31px;
+    background: #00ffff;
+    color: #000000;
+    font-size: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .select select::-ms-expand {
+    display: none;
+  }
+  .select select:hover,
+  .select select:focus {
+    color: #000000;
+    background: #00ffff;
+  }
+  .select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .select_arrow {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #7b7b7b;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .select select:hover ~ .select_arrow,
+  .select select:focus ~ .select_arrow {
+    border-color: #000000;
+  }
+  .select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+  }
 
   .packages-container {
+    background: linear-gradient(#00ffff, rgb(0, 255, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 93%;
+    height: 100px;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: auto;
+  }
+  .exteriorAdOn {
     background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
     border-radius: 50em;
     border: 4px solid transparent;
-    width: 77%;
-    height: 100px;
-    margin: auto;
+    width: 90%;
+    border-radius: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 5%;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .addOns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .packagesheader {
     color: black;
@@ -597,8 +852,9 @@ ul a:hover {
 
   .packages {
     display: flex;
-    margin-left: 10px;
+    margin: auto;
     justify-content: center;
+    margin-bottom: 2%;
   }
 
   .exterior {
@@ -606,7 +862,7 @@ ul a:hover {
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
     border-radius: 50em;
     border: 4px solid transparent;
-    width: 18%;
+    width: 25%;
     height: auto;
     border-radius: 50px;
     display: flex;
@@ -622,14 +878,17 @@ ul a:hover {
 
   .exterior img {
     width: 50%;
+    margin-bottom: 5%;
   }
 
   #bigger {
-    width: 100%;
+    width: 50%;
+    margin-bottom: 5%;
   }
 
   #vacuum {
-    width: 75%;
+    width: 50%;
+    margin-bottom: 5%;
   }
 
   .exterior {
@@ -655,9 +914,13 @@ ul a:hover {
     max-width: 50%;
     height: auto;
   }
+  .featuresAdOn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .features {
-    margin-top: 20px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -683,6 +946,33 @@ ul a:hover {
     display: flex;
     flex-direction: column;
   }
+  .btnSmallerCart {
+    background: #d916e0;
+    background-image: -webkit-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -moz-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -ms-linear-gradient(top, #d916e0, #a719e8);
+    background-image: -o-linear-gradient(top, #d916e0, #a719e8);
+    background-image: linear-gradient(to bottom, #d916e0, #a719e8);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .btnSmallerCart:hover {
+    background: #f703ff;
+    background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -ms-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
+    background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
+    text-decoration: none;
+  }
 
   .schedule-container {
     display: flex;
@@ -697,25 +987,27 @@ ul a:hover {
     margin: auto;
     margin-top: 5%;
   }
-
-  .btn {
+  .btn,
+  .btnSmaller {
     background: #d916e0;
     background-image: -webkit-linear-gradient(top, #d916e0, #a719e8);
     background-image: -moz-linear-gradient(top, #d916e0, #a719e8);
     background-image: -ms-linear-gradient(top, #d916e0, #a719e8);
     background-image: -o-linear-gradient(top, #d916e0, #a719e8);
     background-image: linear-gradient(to bottom, #d916e0, #a719e8);
-    -webkit-border-radius: 60;
-    -moz-border-radius: 60;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
     border-radius: 60px;
     font-family: Arial;
     color: #ffffff;
     font-size: 20px;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     text-decoration: none;
+    margin: auto;
   }
 
-  .btn:hover {
+  .btn:hover,
+  .btnSmaller:hover {
     background: #f703ff;
     background-image: -webkit-linear-gradient(top, #f703ff, #ae02fd);
     background-image: -moz-linear-gradient(top, #f703ff, #ae02fd);
@@ -723,6 +1015,9 @@ ul a:hover {
     background-image: -o-linear-gradient(top, #f703ff, #ae02fd);
     background-image: linear-gradient(to bottom, #f703ff, #ae02fd);
     text-decoration: none;
+  }
+  .btnSmaller {
+    padding: 10px 20px;
   }
 
   .schedule-button {
