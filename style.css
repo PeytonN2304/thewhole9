@@ -306,6 +306,9 @@ ul a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.packages-containermobile {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .contact-information {
@@ -428,7 +431,8 @@ ul a:hover {
     position: relative;
     text-align: center;
     margin: 5% auto;
-    margin-top: 25%;
+    margin-top: 20%;
+    margin-bottom: -10%;
   }
 
   .exterior img {
@@ -549,6 +553,9 @@ ul a:hover {
     margin-bottom: 10px;
     margin-top: 1%;
   }
+  .btnSmaller {
+    margin-top: 5%;
+  }
 
   .contacts-container {
     display: flex;
@@ -578,6 +585,20 @@ ul a:hover {
   .slideshow-container,
   .packages-container .packagesheader {
     display: none;
+  }
+  .packages-containermobile {
+    background: linear-gradient(#00ffff, rgb(0, 255, 255)) padding-box,
+      linear-gradient(to right, #f703ff, #ae02fd) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 93%;
+    height: 100px;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: auto;
+    margin-top: 20%;
   }
   .Featuretext span {
     font-weight: bold;
