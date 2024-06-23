@@ -479,6 +479,7 @@ ul a:hover {
   }
   .addOnsMobile {
     display: flex;
+    flex-direction: column;
   }
   .addOns {
     display: none;
@@ -1015,7 +1016,7 @@ ul a:hover {
   }
 
   .exterior {
-    background: linear-gradient(rgb(0, 255, 255), rgb(0, 255, 255)) padding-box,
+    background: linear-gradient(rgb(0, 255, 255), rgb(0, 89, 255)) padding-box,
       linear-gradient(to right, #f703ff, #ae02fd) border-box;
     border-radius: 50em;
     border: 4px solid transparent;

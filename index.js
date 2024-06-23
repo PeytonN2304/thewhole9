@@ -8,19 +8,10 @@ let totalAmount = 0;
 let lineItemCount = 0;
 let slideIndex = 1;
 let touchableElementPackage = document.getElementById("packagemobile");
-let touchableElementAddon = document.getElementById("exteriorAdOn");
 let parentContainer = document.getElementById("packagemobile");
 const originalBackground = parentContainer.style.background;
 const newBackground = `linear-gradient(#f703ff, #9900ff) padding-box,
 linear-gradient(to right, rgb(0, 255, 255), rgb(0, 255, 255)) border-box`;
-function nextaddon() {
-  addonindex = (addonindex + 1) % 6;
-  updateaddon(addonindex);
-}
-function prevaddon() {
-  addonindex = (addonindex + 5) % 6;
-  updateaddon(addonindex);
-}
 
 touchableElementPackage.addEventListener(
   "touchstart",
@@ -40,24 +31,6 @@ touchableElementPackage.addEventListener(
   },
   false
 );
-touchableElementAddon.addEventListener(
-  "touchstart",
-  function (event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
-  },
-  false
-);
-
-touchableElementAddon.addEventListener(
-  "touchend",
-  function (event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    handleGestureAddon();
-  },
-  false
-);
 
 function handleGesture() {
   if (Math.abs(touchendX - touchstartX) < 20) {
@@ -71,85 +44,7 @@ function handleGesture() {
     prevpackage();
   }
 }
-function handleGestureAddon() {
-  if (Math.abs(touchendX - touchstartX) < 20) {
-    return;
-  }
-  if (touchendX < touchstartX) {
-    prevaddon();
-  }
 
-  if (touchendX > touchstartX) {
-    nextaddon();
-  }
-}
-function updateaddon(index) {
-  let parentContainer = document.getElementById("exteriorAdOn");
-  parentContainer.innerHTML = "";
-  stringToAdd = "";
-  if (index == 0) {
-    stringToAdd = `
-          <h2>Polish and butter wax</h2>
-          <h3>$20</h3>
-          <button
-            onclick="addToPrice({'Polish and butter wax': 20})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  } else if (index == 1) {
-    stringToAdd = `
-          <h2>VRP protectant(exterior)</h2>
-          <h3>$10</h3>
-          <button
-            onclick="addToPrice({'VRP protectant(exterior)': 10})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  } else if (index == 2) {
-    stringToAdd = `
-          <h2>Hydro ceramic exterior spray</h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'Hydro ceramic exterior spray': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  } else if (index == 3) {
-    stringToAdd = `
-          <h2>Silk shine protectant (interior)</h2>
-          <h3>$10</h3>
-          <button
-            onclick="addToPrice({'silk shine protectant (interior)': 10})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  } else if (index == 4) {
-    stringToAdd = `
-          <h2>Carpet extraction</h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'carpet extraction': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  } else if (index == 5) {
-    stringToAdd = `
-          <h2>High shine gloss spray </h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'high shine gloss spray': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>`;
-  }
-  parentContainer.innerHTML += stringToAdd;
-}
 function nextpackage() {
   packageindex = (packageindex + 1) % 3;
   updatePackage(packageindex);

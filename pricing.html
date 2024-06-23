@@ -44,14 +44,14 @@
                 </p>
               </div>
             </div>
-            
+
             <img src="images/bucket.png" alt="Bucket" />
             <button
-            onclick="addToPrice({'Exterior package': 150})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
+              onclick="addToPrice({'Exterior package': 150})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
           </div>
           <div class="exterior">
             <h1>Interior</h1>
@@ -84,11 +84,11 @@
             </div>
             <img src="images/vacuum.png" alt="vacuum" id="vacuum" />
             <button
-            onclick="addToPrice({'Interior package': 125})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
+              onclick="addToPrice({'Interior package': 125})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
           </div>
           <div class="exterior">
             <h1>"Whole 9"</h1>
@@ -108,19 +108,18 @@
             </div>
             <img src="images/whole9.png" alt="Bucket" id="bigger" />
             <button
-            onclick="addToPrice({'Whole 9 package': 215})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-            
+              onclick="addToPrice({'Whole 9 package': 215})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
-        <div class="packages-mobile" >
-          <div class ="arrowcontainer">
-          <button onclick="nextpackage()"><i class="arrow left"></i></button>
-        </div>
-          <div class="exterior" id = "packagemobile">
+        <div class="packages-mobile">
+          <div class="arrowcontainer">
+            <button onclick="nextpackage()"><i class="arrow left"></i></button>
+          </div>
+          <div class="exterior" id="packagemobile">
             <h1>Exterior</h1>
             <h2>$150</h2>
             <p class="description">
@@ -143,126 +142,163 @@
                 </p>
               </div>
             </div>
-            
+
             <img src="images/bucket.png" alt="Bucket" />
             <button
-            onclick="addToPrice({'Exterior package': 150})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
+              onclick="addToPrice({'Exterior package': 150})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class ="arrowcontainer">
-          <button onclick="prevpackage()"><i class="arrow right"></i></button>
-        </div>
-          
+          <div class="arrowcontainer">
+            <button onclick="prevpackage()"><i class="arrow right"></i></button>
+          </div>
         </div>
         <div class="packages-container">
           <h1 class="packagesheader">2. Choose add ons</h1>
-          
         </div>
         <div class="packages-containermobile">
           <h1 class="packagesheader">Add ons</h1>
-          
         </div>
-        <div class = "addOns" >
-        <div class="exteriorAdOn">
-          <h2>Polish and butter wax</h2>
-          <h3>$20</h3>
-          <button
-            onclick="addToPrice({'Polish and butter wax': 20})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-        <div class="exteriorAdOn">
-          <h2>VRP protectant(exterior)</h2>
-          <h3>$10</h3>
-          <button
-            onclick="addToPrice({'VRP protectant(exterior)': 10})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-        <div class="exteriorAdOn">
-          <h2>Hydro ceramic exterior spray</h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'Hydro ceramic exterior spray': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-        <div class="exteriorAdOn">
-          <h2>Silk shine protectant (interior)</h2>
-          <h3>$10</h3>
-          <button
-            onclick="addToPrice({'silk shine protectant (interior)': 10})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-        <div class="exteriorAdOn">
-          <h2>Carpet extraction</h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'carpet extraction': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-        <div class="exteriorAdOn">
-          <h2>High shine gloss spray </h2>
-          <h3>$15</h3>
-          <button
-            onclick="addToPrice({'high shine gloss spray': 15})"
-            class="btnSmaller"
-          >
-            Add to cart
-          </button>
-        </div>
-      </div>
-      <div class="addOnsMobile">
-        <div class ="arrowcontainer">
-          <button onclick="nextaddon()"><i class="arrow left"></i></button>
-        </div>
-      <div class="exteriorAdOn" id = "exteriorAdOn">
-        <h2>Polish and butter wax</h2>
-        <h3>$20</h3>
-        <button
-          onclick="addToPrice({'Polish and butter wax': 20})"
-          class="btnSmaller"
-        >
-          Add to cart
-        </button>
-      </div>
-      <div class ="arrowcontainer">
-        <button onclick="prevaddon()"><i class="arrow right"></i></button>
-      </div>
-      </div>
-        
-        
-      </div>
-      <div class="packageRight">
-        <div class="totalContainer">
-          <h4>Total:</h4>
-          <h4 id="totalAmount">0</h4>
-        </div>
-        <div class="lineItemContainer">
-          <div class="addoncontainer">
-            <h2>Price Checker</h2>
+        <div class="addOns">
+          <div class="exteriorAdOn">
+            <h2>Polish and butter wax</h2>
+            <h3>$20</h3>
+            <button
+              onclick="addToPrice({'Polish and butter wax': 20})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
           </div>
-          <div class="lineItems" id="lineItemContainer"></div>
+          <div class="exteriorAdOn">
+            <h2>VRP protectant(exterior)</h2>
+            <h3>$10</h3>
+            <button
+              onclick="addToPrice({'VRP protectant(exterior)': 10})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Hydro ceramic exterior spray</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'Hydro ceramic exterior spray': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Silk shine protectant (interior)</h2>
+            <h3>$10</h3>
+            <button
+              onclick="addToPrice({'silk shine protectant (interior)': 10})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Carpet extraction</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'carpet extraction': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>High shine gloss spray</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'high shine gloss spray': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
-        
-      
-        
-  </div>
+        <div class="addOnsMobile">
+          <div class="exteriorAdOn">
+            <h2>Polish and butter wax</h2>
+            <h3>$20</h3>
+            <button
+              onclick="addToPrice({'Polish and butter wax': 20})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>VRP protectant(exterior)</h2>
+            <h3>$10</h3>
+            <button
+              onclick="addToPrice({'VRP protectant(exterior)': 10})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Hydro ceramic exterior spray</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'Hydro ceramic exterior spray': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Silk shine protectant (interior)</h2>
+            <h3>$10</h3>
+            <button
+              onclick="addToPrice({'silk shine protectant (interior)': 10})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>Carpet extraction</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'carpet extraction': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="exteriorAdOn">
+            <h2>High shine gloss spray</h2>
+            <h3>$15</h3>
+            <button
+              onclick="addToPrice({'high shine gloss spray': 15})"
+              class="btnSmaller"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="packageRight">
+      <div class="totalContainer">
+        <h4>Total:</h4>
+        <h4 id="totalAmount">0</h4>
+      </div>
+      <div class="lineItemContainer">
+        <div class="addoncontainer">
+          <h2>Price Checker</h2>
+        </div>
+        <div class="lineItems" id="lineItemContainer"></div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
