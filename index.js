@@ -36,6 +36,9 @@ function handleGesture() {
   if (Math.abs(touchendX - touchstartX) < 20) {
     return;
   }
+  if (Math.abs(touchendY - touchstartY) > 50) {
+    return;
+  }
   if (touchendX < touchstartX) {
     nextpackage();
   }
